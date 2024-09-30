@@ -1,0 +1,154 @@
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(167, 235, 167);
+}
+
+.characterList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 personagens por linha */
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.pokemonCard {
+  background-color: var(--card-background);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.pokemonCard:hover {
+  transform: scale(1.05);
+}
+
+.pokemonImage {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius);
+}
+
+.detailsButton {
+  padding: 10px;
+  background-color: var(--button-background);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.2rem;
+}
+
+.detailsButton:hover {
+  background-color: var(--button-hover);
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--button-background);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.2rem;
+  margin-bottom: 10%;
+  
+}
+
+.pagination button:hover {
+  background-color: rgb(71, 233, 111) ;
+}
+
+.activePage {
+  font-weight: bold;
+  background-color: var(--button-hover);
+}
+
+.detailsModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.closeButton {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.detailsModal img {
+  width: 200px; /* Ajuste conforme necessário */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.titleImage {
+  width: 200px; /* Ajuste conforme necessário */
+  height: auto;
+  margin-bottom: 20px; /* Espaço entre a imagem e o título */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  
+  
+}
+
+.pageButton {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--button-background);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pageButton:hover {
+  background-color: var(--button-hover);
+}
+
+.activePage {
+  font-weight: bold;
+  background-color: var(--button-hover);
+  cursor: default;
+}
+
